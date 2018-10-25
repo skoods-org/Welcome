@@ -8,25 +8,41 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 - Website: www.skoods.org
 
+<u>Skoods Demo</u>
+
+[ne![Skoods Demo](images\skoods-demo.png)](https://www.youtube.com/watch?v=8hI_HZZnYH0)
+
+<u>Teaser: The Goodwood Festival Of Speed</u>
+
+[![Skoods Demo](images\skoods-fos.png)](https://www.youtube.com/watch?v=X7a1ARVpse0)
+
+teste
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X7a1ARVpse0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
 ## What's New
 
 - October 25th, 2018 - Alpha Version Race: Release
 
-## Table of Content
+## Quick Start
 
-<!--TOC max2-->
+Here you can learn the steps to quickly start coding your own self-racing car.
 
-## Download and Run the Competition Executable
+### Download and Run the Competition Executable
 
-Download the simulation:
+1. Download the simulation:
 
-- [Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
+[Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
 
-Unzip the file.
+2. Unzip the file.
 
-Open the ./AlphaVersionRace folder and double click the AlphaVersionRace.exe file to start the simulation.
+3. Open the ./AlphaVersionRace folder and double click the AlphaVersionRace.exe file to start the simulation.
 
-## Download and Install Anaconda
+### Download and Install Anaconda
 
 The open source Anaconda Distribution is the fastest and easiest way to do Python, data science and machine learning on Linux, Windows, and Mac OS X. It's the industry standard for developing, testing, and training on a single machine.
 
@@ -34,7 +50,7 @@ The open source Anaconda Distribution is the fastest and easiest way to do Pytho
 
 - Video Tutorial (Windows 10): [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
 
-## Create a Conda Environment
+### Create a Conda Environment
 
 An environment consists of a certain Python version and some packages. Consequently, if you want to develop or use applications with different Python or package version requirements, you need to set up different environments.
 
