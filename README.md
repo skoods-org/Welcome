@@ -8,11 +8,11 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 - Website: www.skoods.org
 
-__Skoods Demo__
+*Skoods Demo*
 
 [![Skoods Demo](images/skoods-demo.png)](https://www.youtube.com/watch?v=8hI_HZZnYH0)
 
-__Teaser: The Goodwood Festival Of Speed__
+*Teaser: The Goodwood Festival Of Speed*
 
 [![Skoods: The Goodwood Festival Of Speed](images/skoods-fos.png)](https://www.youtube.com/watch?v=X7a1ARVpse0)
 
@@ -24,6 +24,10 @@ __Teaser: The Goodwood Festival Of Speed__
 
 Here you can learn the steps to quickly start coding your own self-racing car.
 
+### Requirements
+
+Skoods competitions are currently supported to run on Windows 10 and Python 3.5.
+
 ### Download and Run the Competition Executable
 
 1. Download the simulation:
@@ -31,8 +35,17 @@ Here you can learn the steps to quickly start coding your own self-racing car.
 [Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
 
 2. Unzip the file.
+3. Open the **AlphaVersionRace/** folder and double click the **AlphaVersionRace.exe** file to start the simulation.
 
-3. Open the ./AlphaVersionRace folder and double click the AlphaVersionRace.exe file to start the simulation.
+NOTE 1: If it´s the first time you are running Skoods simulations, you will see the message: *"Would you like to use car simulation? Choose no to use quadrotor simulation."* Press **Yes** to continue.
+
+NOTE 2: In the simulation, Press `F1` to see the list of commands available.
+
+![Simulation Commands](images/f1-commands.png)
+
+
+
+NOTE 3: You can see that the simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
 
 ### Download and Install Anaconda
 
@@ -40,7 +53,7 @@ The open source Anaconda Distribution is the fastest and easiest way to do Pytho
 
 - Download and install the latest version: https://www.anaconda.com/download/
 
-- Video Tutorial (Windows 10): [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
+VIDEO TUTORIAL: [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
 
 ### Create a Conda Environment
 
