@@ -10,19 +10,14 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 ## What's New
 
-
-
-
-
-## Requirements
-
-Windows
+- October 25th, 2018 - Alpha Version Race: Release
 
 ## Download and Run the Competition Executable
 
-Run the executable and navigate the world with the using the arrows.
+Run the executable and navigate the world using the arrows.
 
-- Alpha Version Race
+- Alpha Version Race (Windows x64)
+- Alpha Version Race (Linux)
 
 ## Download and Install Anaconda
 
@@ -30,7 +25,7 @@ The open source Anaconda Distribution is the fastest and easiest way to do Pytho
 
 - Download and install the latest version: https://www.anaconda.com/download/
 
-- Video Tutorial: [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
+- Video Tutorial (Windows 10): [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
 
 ## Create a Conda Environment
 
@@ -38,7 +33,7 @@ An environment consists of a certain Python version and some packages. Consequen
 
 We are currently using Python version 3.5.
 
-After installing Anaconda, Open the Anaconda Prompt app from the Start Menu and follow the instructions:.
+After installing Anaconda, Open the Anaconda Prompt app from the Start Menu and follow the instructions:
 
 To create a new environment, type:
 
@@ -82,7 +77,7 @@ First, upgrade PIP itself:
 pip install --upgrade pip
 ```
 
-Then, follow the instructions to install 3 additional packages:
+Then, follow the instructions to install 3 additional packages (this may need administrator or sudo prompt):
 
 ```
 pip install msgpack-rpc-python
@@ -98,15 +93,17 @@ conda install --channel https://conda.anaconda.org/menpo opencv3
 
 If you use more Python packages in your code, you must install them here. Make sure the environment is activated before running the command.
 
+## Run the Code
+
+Clone this repo and run the /PythonExamples/hello_car.py file (make sure the skoods35 environment is active and the simulation/executable is opened):
+
+```
+python hello_car.py
+```
+
 ## (Optional) Download and Install Visual Studio Code
 
 Visual Studio Code combines the simplicity of a source code editor with powerful developer tooling.
 
 - Download: https://code.visualstudio.com/download
-
 - More information: https://code.visualstudio.com/docs/editor/whyvscode
-
-## Run the Code
-
-
-
