@@ -8,11 +8,13 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 - Website: www.skoods.org
 
-*Skoods Demo*
+NOTE: You can run the simulation and develop by your own. However, if you want to compete, join a team of developers, collaborate and learn more about the technology, join our community: https://www.skoods.org/get-invited
+
+*Skoods Moonshot Demo*
 
 [![Skoods Demo](images/skoods-demo.png)](https://www.youtube.com/watch?v=8hI_HZZnYH0)
 
-*Teaser: The Goodwood Festival Of Speed*
+*Video Teaser: Skoods inThe Goodwood Festival Of Speed 2018*
 
 [![Skoods: The Goodwood Festival Of Speed](images/skoods-fos.png)](https://www.youtube.com/watch?v=X7a1ARVpse0)
 
@@ -26,26 +28,26 @@ Here you can learn the steps to quickly start coding your own self-racing car.
 
 ### Requirements
 
-Skoods competitions are currently supported to run on Windows 10 and Python 3.5.
+Skoods competitions are currently supported to run on Windows 10 x64 and Python 3.5. You will be guided to install Python 3.5 using Anaconda in this guide.
+
+NOTE 1: If you are running Linux or iOS and would like to compete at Skoods, please [leave a message here describing your OS](https://github.com/skoods-org/welcome/issues/1).
+
+NOTE 2: If you would like to also develop with C++, [please include your vote here](https://github.com/skoods-org/welcome/issues/2).
 
 ### Download and Run the Competition Executable
 
-1. Download the simulation:
-
-[Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
+1. Download the simulation: [Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
 
 2. Unzip the file.
 3. Open the **AlphaVersionRace/** folder and double click the **AlphaVersionRace.exe** file to start the simulation.
 
 NOTE 1: If it´s the first time you are running Skoods simulations, you will see the message: *"Would you like to use car simulation? Choose no to use quadrotor simulation."* Press **Yes** to continue.
 
-NOTE 2: In the simulation, Press `F1` to see the list of commands available.
+4. In the simulation, Press `F1` to see the list of commands available.
 
 ![Simulation Commands](images/f1-commands.png)
 
-
-
-NOTE 3: You can see that the simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
+NOTE 2: The simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
 
 ### Download and Install Anaconda
 
@@ -61,7 +63,7 @@ An environment consists of a certain Python version and some packages. Consequen
 
 We are currently developing and supporting Python version 3.5.
 
-After installing Anaconda, Open the Anaconda Prompt app from the Start Menu and follow the instructions:
+After installing Anaconda, Open the **Anaconda Prompt** app from the **Start Menu** and follow the instructions:
 
 1. To create a new environment, type:
 
@@ -75,13 +77,13 @@ conda create -n skoods35 python=3.5
 proceed ([y]/n)?
 ```
 
-3. After this process, check if the environment was created. To see a list of all of your environments, run in the Anaconda Prompt:
+3. After this process, check if the environment was created. To see a list of all of your environments, run::
 
 ```
 conda info --envs
 ```
 
-## Activate Environment
+### Activate Environment
 
 Every time you want to control the car using the API, you must first activate the skoods35 environment.
 
@@ -91,7 +93,7 @@ In your Anaconda Prompt, run:
 activate skoods35
 ```
 
-## Install Additional Packages
+### Install Additional Packages
 
 PIP is a package manager for Python packages, or modules if you like. A package contains all the files you need for a module and modules are Python code libraries you can include in your project.
 
@@ -101,7 +103,7 @@ First, upgrade PIP itself:
 pip install --upgrade pip
 ```
 
-Then, follow the instructions to install 3 additional packages (this may need administrator or sudo prompt):
+Then, follow the instructions to install 3 additional packages. This may need you to run **Anaconda Prompt** as Administrator:
 
 ```
 pip install msgpack-rpc-python
@@ -117,38 +119,46 @@ conda install --channel https://conda.anaconda.org/menpo opencv3
 
 If you use more Python packages in your code, you must install them here. Make sure the environment is activated before running the command.
 
-## Run the Code
+### Run the Code
 
-Before running the code, we must add a file that will define thee initial setting of the simulation.
+Before running the code, we must add a file that will define the initial setting of the simulation.
 
-Clone or download this repo to your local machine: https://github.com/skoods-org/welcome
+1. Clone or download this repo to your local machine: https://github.com/skoods-org/welcome
 
-Create a new folder in the Documents folder called AirSim.
+2. Create a new folder in the Documents folder called AirSim (if it´s not already there).
 
-Copy and paste the settings.json file to the new folder.
+3. Copy and paste the `settings.json` file to the new folder:
 
 ```
 /Documents/AirSim/settings.json
 ```
 
-Open the Anaconda Prompt and activate the airsim35 environment:
+NOTE: Know more about the `settings.json` in the [Airsim project github page](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md).
+
+4. Open the Anaconda Prompt and activate the airsim35 environment:
 
 ```
 activate skoods35
 ```
 
-Double click the AlphaVersionRace.exe file to start the simulation.
+5. Double click the **AlphaVersionRace.exe** file to start the simulation.
 
-Navigate to the PythonExamples folder and run the hello_car.py file:
+6. Navigate to the **PythonExamples/** folder and run the `hello_car.py` file:
 
 ```
 python hello_car.py
 ```
 
-## (Optional) Download and Install Visual Studio Code
+### (Optional) Download and Install Visual Studio Code
 
-Visual Studio Code combines the simplicity of a source code editor with powerful developer tooling.
+**Visual Studio Code** combines the simplicity of a source code editor with powerful developer tooling.
+
+I like to use **Visual Studio Code** to work on my projects. You can run Python code and change Conda Environments directly from the app.
 
 - Download: https://code.visualstudio.com/download
-- More information: https://code.visualstudio.com/docs/editor/whyvscode
+
+MORE INFO:
+
+- [Why VS Code?](https://code.visualstudio.com/docs/editor/whyvscode)
+- [VS Code Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
 
