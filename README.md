@@ -8,11 +8,11 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 - Website: www.skoods.org
 
-<u>Skoods Demo</u>
+__Skoods Demo__
 
 [![Skoods Demo](images/skoods-demo.png)](https://www.youtube.com/watch?v=8hI_HZZnYH0)
 
-<u>Teaser: The Goodwood Festival Of Speed</u>
+__Teaser: The Goodwood Festival Of Speed__
 
 [![Skoods: The Goodwood Festival Of Speed](images/skoods-fos.png)](https://www.youtube.com/watch?v=X7a1ARVpse0)
 
