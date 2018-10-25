@@ -14,7 +14,7 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 ## Table of Content
 
-[TOC]
+<!--TOC max2-->
 
 ## Download and Run the Competition Executable
 
@@ -130,24 +130,4 @@ Visual Studio Code combines the simplicity of a source code editor with powerful
 
 - Download: https://code.visualstudio.com/download
 - More information: https://code.visualstudio.com/docs/editor/whyvscode
-
-
-
-
-
-<!--Comment as an example-->
-
-> Quote
-
-
-
-task list
-
-- [ ] asd 1
-- [ ] sdfgasdgf 2
-- [ ] gfrsgf sdfgfdg sd 3
-
-
-
-------
 
