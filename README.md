@@ -28,18 +28,28 @@ Here you can learn the steps to quickly start coding your own self-racing car.
 
 ### Requirements
 
-Skoods competitions are currently supported to run on Windows 10 x64 and Python 3.5. You will be guided to install Python 3.5 using Anaconda in this guide.
+1. Skoods competitions are currently supported to run on Windows 10 x64 and Python 3.5. You will be guided to install Python 3.5 using Anaconda.
 
 NOTE 1: If you are running Linux or iOS and would like to compete at Skoods, please [leave a message here describing your OS](https://github.com/skoods-org/welcome/issues/1).
 
 NOTE 2: If you would like to also develop with C++, [please include your vote here](https://github.com/skoods-org/welcome/issues/2).
 
+2. We use Microsoft AirSim plugin to virtualize the sensors and call functions from the API.
+
+You don't need to clone or download the AirSim project to your local machine to run our competitions, unless you wish to build the simulation by your own. However, getting to know the AirSim project is very important.
+
+Know more about AirSim: [Welcome to AirSim](https://github.com/Microsoft/AirSim)
+
 ### Download and Run the Competition Executable
 
-1. Download the simulation: [Alpha Version Race (Windows x64)](https://docs.zoho.com/file/akrkj92738de27bf94221a4f8867c6ba159b3)
+1. Download the simulation with high or low graphics quality:
+
+[Alpha Version Race - Quality High Windows x64](https://docs.zoho.com/file/akrkjad2edbb1f75442fcb42c4a1ba433ff4d)
+
+[Alpha Version Race - Quality Low Windows x64](https://docs.zoho.com/file/akrkj28babf6ff5234fbb9c1df1d018371ed8)
 
 2. Unzip the file.
-3. Open the **AlphaVersionRace/** folder and double click the **AlphaVersionRace.exe** file to start the simulation.
+3. Open the unzipped folder and double click the **AlphaVersionRace.exe** file to start the simulation.
 
 NOTE 1: If it´s the first time you are running Skoods simulations, you will see the message: *"Would you like to use car simulation? Choose no to use quadrotor simulation."* Press **Yes** to continue.
 
@@ -48,6 +58,8 @@ NOTE 1: If it´s the first time you are running Skoods simulations, you will see
 ![Simulation Commands](images/f1-commands.png)
 
 NOTE 2: The simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
+
+5. Drive the car around and press `Alt + F4` to exit.
 
 ### Download and Install Anaconda
 
@@ -133,7 +145,7 @@ Before running the code, we must add a file that will define the initial setting
 /Documents/AirSim/settings.json
 ```
 
-NOTE: Know more about the `settings.json` in the [Airsim project github page](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md).
+NOTE: Know more about the `settings.json` in the [Microsoft Airsim project page](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md).
 
 4. Open the Anaconda Prompt and activate the airsim35 environment:
 
@@ -141,13 +153,15 @@ NOTE: Know more about the `settings.json` in the [Airsim project github page](ht
 activate skoods35
 ```
 
-5. Double click the **AlphaVersionRace.exe** file to start the simulation.
+5. Double click the **AlphaVersionRace.exe** file to start the simulation (press `Alt+Tab` to go back to the Desktop).
 
-6. Navigate to the **PythonExamples/** folder and run the `hello_car.py` file:
+6. Navigate to the **PythonExamples/** folder and run the `hello_skoods.py` file:
 
 ```
-python hello_car.py
+python hello_skoods.py
 ```
+
+7. Press `Alt+F4` to exit.
 
 ### (Optional) Download and Install Visual Studio Code
 
@@ -162,3 +176,16 @@ MORE INFO:
 - [Why VS Code?](https://code.visualstudio.com/docs/editor/whyvscode)
 - [VS Code Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
 
+## Coding You Own Self-Racing Car
+
+Important links:
+
+- [AirSim APIs](https://github.com/Microsoft/AirSim/blob/master/docs/apis.md)
+- [AirSim Settings](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md)
+- [AirSim Python Examples](https://github.com/Microsoft/AirSim/tree/master/PythonClient/car)
+
+More coming soon!!!
+
+## Open-Source Self-Racing Car
+
+Coming soon!!!
