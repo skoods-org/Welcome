@@ -1,9 +1,9 @@
-import setup_path 
 import airsim
 
 import time
 import os
 import numpy as np
+import cv2
 
 # connect to the AirSim simulator 
 client = airsim.CarClient()
@@ -16,37 +16,44 @@ for idx in range(3):
     car_state = client.getCarState()
     print("Speed %d, Gear %d" % (car_state.speed, car_state.gear))
 
-    # go forward
+    # go forward for 3 seconds
     car_controls.throttle = 0.5
     car_controls.steering = 0
     client.setCarControls(car_controls)
     print("Go Forward")
     time.sleep(3)   # let car drive a bit
 
-    # Go forward + steer right
+    # Go forward + steer right for 0.5 seconds
     car_controls.throttle = 0.5
     car_controls.steering = 1
     client.setCarControls(car_controls)
     print("Go Forward, steer right")
-    time.sleep(3)   # let car drive a bit
+    time.sleep(0.5)   # let car drive a bit
 
-    # go reverse
+    # Go forward + steer left for 0.5 seconds
+    car_controls.throttle = 0.5
+    car_controls.steering = -1
+    client.setCarControls(car_controls)
+    print("Go Forward, steer left")
+    time.sleep(0.5)   # let car drive a bit
+
+    # apply breaks for 5 seconds
+    car_controls.brake = 1
+    client.setCarControls(car_controls)
+    print("Apply break")
+    time.sleep(5)   # let car drive a bit
+    car_controls.brake = 0 #remove break
+
+    # go reverse for 3 seconds
     car_controls.throttle = -0.5
     car_controls.is_manual_gear = True;
     car_controls.manual_gear = -1
     car_controls.steering = 0
     client.setCarControls(car_controls)
-    print("Go reverse, steer right")
+    print("Go reverse")
     time.sleep(3)   # let car drive a bit
     car_controls.is_manual_gear = False; # change back gear to auto
     car_controls.manual_gear = 0  
-
-    # apply breaks
-    car_controls.brake = 1
-    client.setCarControls(car_controls)
-    print("Apply break")
-    time.sleep(3)   # let car drive a bit
-    car_controls.brake = 0 #remove break
     
     # get camera images from the car
     responses = client.simGetImages([
@@ -57,7 +64,7 @@ for idx in range(3):
     print('Retrieved images: %d', len(responses))
 
     for response in responses:
-        filename = 'c:/temp/py' + str(idx)
+        filename = 'c:/temp/skoods' + str(idx)
         if not os.path.exists('c:/temp/'):
             os.makedirs('c:/temp/')
         if response.pixels_as_float:
@@ -78,7 +85,7 @@ for idx in range(3):
 #restore to original state
 client.reset()
 
-client.enableApiControl(False)
+client.enableApiControl(False) # you can drive again with the arrows
 
 
             

@@ -59,7 +59,8 @@ NOTE 1: If it´s the first time you are running Skoods simulations, you will see
 
 NOTE 2: The simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
 
-5. Drive the car around and press `Alt + F4` to exit.
+5. Drive the car around. Press `0` and `;` to see data from virtual sensors.
+6. Press `Alt + F4` to exit.
 
 ### Download and Install Anaconda
 
