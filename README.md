@@ -42,6 +42,12 @@ Know more about AirSim: [Welcome to AirSim](https://github.com/Microsoft/AirSim)
 
 ### Download and Run the Competition Executable
 
+In the following video, you can see a general overview of the Alpha Version Race simulation and the visualization of the HD Map.
+
+*Alpha Version Race*
+
+[![Skoods: The Goodwood Festival Of Speed](images/AlphaVersionCompetition.png)](https://youtu.be/oDBrac6QwOs)
+
 1. Download the simulation with high or low graphics quality:
 
 [Alpha Version Race - Quality High Windows x64](https://docs.zoho.com/file/akrkjad2edbb1f75442fcb42c4a1ba433ff4d)
@@ -179,11 +185,38 @@ MORE INFO:
 
 ## Coding You Own Self-Racing Car
 
-Important links:
+### Map
+
+Download the HD Map of the simulation here: [hd_map.xyz](https://docs.zoho.com/file/86za2b229a251abbd4ae7a41cdf234d5e5616)
+
+You can also generate your own HD Map by driving the track and running this code: [/PythonExamples/lidar_mapping.py](/PythonExamples/lidar_mapping.py) Make sure to change the `settings.json` file to:
+
+```json
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "DefaultSensors": {
+    "Lidar": {
+      "SensorType": 6,
+      "Enabled": true,
+      "DrawDebugPoints": true
+    }
+  }
+}
+```
+
+(Optional) Turning `DrawDebugPoints` to false may increase performance.
+
+TIP: To open `.xyz` files, you can use MeshLab, which is an open source system for processing and editing 3D triangular meshes. It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing. Website: http://www.meshlab.net/
+
+### Important links
 
 - [AirSim APIs](https://github.com/Microsoft/AirSim/blob/master/docs/apis.md)
 - [AirSim Settings](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md)
 - [AirSim Python Examples](https://github.com/Microsoft/AirSim/tree/master/PythonClient/car)
+- [AirSim Sensors](https://github.com/Microsoft/AirSim/blob/master/docs/sensors.md)
+- [AirSim Lidar](https://github.com/Microsoft/AirSim/blob/master/docs/lidar.md)
 
 More coming soon!!!
 
