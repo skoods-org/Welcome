@@ -11,7 +11,7 @@ airsim.wait_key('Press any key.')
 i = 0
 current_time_stamp = 0
 
-while(i<2000):
+while(i<100):
     lidarData = client.getLidarData()
     new_time_stamp = lidarData.time_stamp
     # Check time_stamp to compar with past time_stamp. Avoid processing the same info 2x
@@ -37,6 +37,6 @@ while(i<2000):
 
     time.sleep(0.0333)
 
-np.savetxt("hd_map_example.xyz", points, fmt='%s')
+np.savetxt("hd_map_guardrail.xyz", points, fmt='%s')
 
 
