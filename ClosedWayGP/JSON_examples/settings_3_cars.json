@@ -1,0 +1,32 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "Vehicles": {
+    "SetCarName1": {
+      "VehicleType": "PhysXCar",
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "SetCarName2": {
+      "VehicleType": "PhysXCar",
+      "X": 0.0,
+      "Y": 7.0,
+      "Z": 0.0
+    },
+    "SetCarName3": {
+      "VehicleType": "PhysXCar",
+      "X": 0.0,
+      "Y": 14.0,
+      "Z": 0.0
+    }
+  },
+  "DefaultSensors": {
+    "Lidar": {
+      "SensorType": 6,
+      "Enabled": false,
+      "DrawDebugPoints": false
+    }
+  }
+}

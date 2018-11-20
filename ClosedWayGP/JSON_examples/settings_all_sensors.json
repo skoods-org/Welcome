@@ -1,0 +1,33 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Car",
+  "DefaultSensors": {
+    "Barometer": {
+      "SensorType": 1,
+      "Enabled": true
+    },
+    "Imu": {
+      "SensorType": 2,
+      "Enabled": true
+    },
+    "Gps": {
+      "SensorType": 3,
+      "Enabled": true
+    },
+    "Magnetometer": {
+      "SensorType": 4,
+      "Enabled": true
+    },
+    "Distance": {
+      "SensorType": 5,
+      "Enabled": true
+    },
+    "Lidar": {
+      "SensorType": 6,
+      "Enabled": true,
+      "DrawDebugPoints": true
+    }
+  }
+}
+

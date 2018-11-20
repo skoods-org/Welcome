@@ -8,218 +8,189 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 - Website: www.skoods.org
 
-NOTE: You can run the simulation and develop by your own. However, if you want to compete, join a team of developers, collaborate and learn more about the technology, join our community: https://www.skoods.org/get-invited
+**Formula Skoods Intro**
 
-*Skoods Moonshot Demo*
+[![Skoods Demo](images/Skoods-Closed-Way-2.png)](https://youtu.be/_Ayh0lTGc_I)
 
-[![Skoods Demo](images/skoods-demo.png)](https://www.youtube.com/watch?v=8hI_HZZnYH0)
-
-*Video Teaser: Skoods inThe Goodwood Festival Of Speed 2018*
+**Video Teaser: Skoods inThe Goodwood Festival Of Speed 2018**
 
 [![Skoods: The Goodwood Festival Of Speed](images/skoods-fos.png)](https://www.youtube.com/watch?v=X7a1ARVpse0)
 
+
+
 ## What's New
 
-- October 25th, 2018 - Alpha Version Race: Release
+- November 20th, 2018 - Formula Skoods: Skoods Closed-way (Closed Circuit) Launch
+- October 25th, 2018 - Alpha Version Race: track available to download
 
-## Quick Start
 
-Here you can learn the steps to quickly start coding your own self-racing car.
+
+## Collaborate
+
+### Slack Team
+
+You can run the simulation and develop by your own. However, if you want to compete, join a racing team, collaborate and learn more about the technology, join our community:
+
+[![Slack](images/slack.png)](https://join.slack.com/t/skoods/shared_invite/enQtNDg0MzEwNDY3MjgyLWVlNjRlYWRhNTFiNDk0OTBlYmY2ZDMzMGZhOThlZjQ5NDczNjI4MzgxMmQzZDEyZWZlMzViMWVhZDc2MDRmMzg)
+
+### Open-Source Self-Racing Car
+
+If you want to collaborate with the development of our Open-Source Self-Racing Car, also join our Trello board:
+
+[![Trello](images/trello.png)](https://trello.com/b/U9xBONo2)
+
+
+
+## Formula Skoods
+
+Welcome to the first virtual racing competition for autonomous cars of the world: Formula Skoods!
+
+Formula Skoods is a platform for engineers and developers where they create their own self-driving car algorithms and compete with other pilots around the world. Teams of 2 or more members can also compete.
+
+Skoods provides a 3D simulation of the tracks as `.exe` files that pilots can run locally. We also provide an open-source self-racing car with the implementation of basic algorithms and technologies: it's a great way to start!
+
+It doesn't matter if you are a begginer trying to learn the basics of autonomous vehicles or if you are a more advanced developer competing for the Podium. You can get started right away.
 
 ### Requirements
 
-1. Skoods competitions are currently supported to run on Windows 10 x64 and Python 3.5. You will be guided to install Python 3.5 using Anaconda.
+- Skoods competitions are currently supported to run on Windows 10 x64 and Python 3.6. Access the link [Getting Started to be guided to install the Skoods Python 3.6 environment with Anaconda](getting_started.md).
 
-NOTE 1: If you are running Linux or iOS and would like to compete at Skoods, please [leave a message here describing your OS](https://github.com/skoods-org/welcome/issues/1).
-
-NOTE 2: If you would like to also develop with C++, [please include your vote here](https://github.com/skoods-org/welcome/issues/2).
-
-2. We use Microsoft AirSim plugin to virtualize the sensors and call functions from the API.
+- We use Microsoft AirSim plugin to virtualize the sensors and call functions from the API.
 
 You don't need to clone or download the AirSim project to your local machine to run our competitions, unless you wish to build the simulation by your own. However, getting to know the AirSim project is very important.
 
 Know more about AirSim: [Welcome to AirSim](https://github.com/Microsoft/AirSim)
 
-### Download and Run the Competition Executable
+### Grand Prix
 
-In the following video, you can see a general overview of the Alpha Version Race simulation and the visualization of the HD Map.
+#### GP1: Skoods Closed-way (Closed Circuit)
 
-*Alpha Version Race*
+![](images/Closed-Way-full.jpg)
 
-[![Skoods: The Goodwood Festival Of Speed](images/AlphaVersionCompetition.png)](https://youtu.be/oDBrac6QwOs)
+It's a typical closed circuit track with a few challenges, like obstacles, shadows, different backgrounds and tight curves.
 
-1. Download the simulation with high or low graphics quality:
+- Clockwise orientation
+- 7 turns right, different angles
+- 3 turns left, different angles
+- Track with shadows from trees
+- Obstacles on track
+- Background changes from grass and green to sandy and beige
+- 2D: no ascents and descents
+- Number of race laps: 5
 
-[Alpha Version Race - Quality High Windows x64](https://docs.zoho.com/file/akrkjad2edbb1f75442fcb42c4a1ba433ff4d)
+Download link:
 
-[Alpha Version Race - Quality Low Windows x64](https://docs.zoho.com/file/akrkj28babf6ff5234fbb9c1df1d018371ed8)
+- [Alpha Version Race - Quality High Windows x64](https://docs.zoho.com/file/akrkjad2edbb1f75442fcb42c4a1ba433ff4d)
 
-2. Unzip the file.
-3. Open the unzipped folder and double click the **AlphaVersionRace.exe** file to start the simulation.
+- [Alpha Version Race - Quality Low Windows x64](https://docs.zoho.com/file/akrkj28babf6ff5234fbb9c1df1d018371ed8)
 
-NOTE 1: If it´s the first time you are running Skoods simulations, you will see the message: *"Would you like to use car simulation? Choose no to use quadrotor simulation."* Press **Yes** to continue.
+For this track, we will be using ground truth information from the simulation to get the localization of the car.
 
-4. In the simulation, Press `F1` to see the list of commands available.
+You can't use ground truth information of other cars. Here you will have to use Lidar and Camera to localize the other cars.
 
-![Simulation Commands](images/f1-commands.png)
+Phases:
 
-NOTE 2: The simulation will create a folder called **AirSim/** in your **Documents/** folder. Inside it, you can find a new file called `settings.json`. You will learn more about this file later on. Also, if you activate the **Recording** mode by pressing `R`, new files will be added to this same folder.
+- Qualify: 5 cars advance to the Finals
 
-5. Drive the car around. Press `0` and `;` to see data from virtual sensors.
-6. Press `Alt + F4` to exit.
+  [OPEN: Submit you code here!](https://forms.zohopublic.com/skoods/form/SkoodsClosedWayGP/formperma/Ge8mCDCVlXd_GJWn8cjdLhbb8tFRnFp_6AeYEekoA5g)
 
-### Download and Install Anaconda
+- Finals: 5 cars compete side by side
 
-The open source Anaconda Distribution is the fastest and easiest way to do Python, data science and machine learning on Linux, Windows, and Mac OS X. It's the industry standard for developing, testing, and training on a single machine.
+NOTE: The Season Score system will be communicated. Other circuits coming soon.
 
-- Download and install the latest version: https://www.anaconda.com/download/
+#### GP2: Skoods Egg-way (Oval Circuit)
 
-VIDEO TUTORIAL: [Python - Install Anaconda, Jupyter Notebook, Spyder on Windows 10](https://www.youtube.com/watch?v=Q0jGAZAdZqM)
+*(Coming soon)* A typical oval track consists of two parallel straights, connected by two 180° turns. An egg-shaped oval corresponds to the classical form, however, the two straights are non-parallel arranged. A straight line is slightly longer than the other and the two curves have different radii.
 
-### Create a Conda Environment
+- All turns to left
+- Open angles
+- High speed
 
-An environment consists of a certain Python version and some packages. Consequently, if you want to develop or use applications with different Python or package version requirements, you need to set up different environments.
+- Counter-clockwise orientation
+- Track width is the same all over the circuit
+- 2D: no ascents and descents
+- Number of laps: 5
 
-We are currently developing and supporting Python version 3.5.
+Where there is generally one preferred line around a road course, there are many different lines which can work on an oval track.
 
-After installing Anaconda, Open the **Anaconda Prompt** app from the **Start Menu** and follow the instructions:
+### Race
 
-1. To create a new environment, type:
+Rules:
 
-```comm
-conda create -n skoods35 python=3.5
-```
+- Pilots can code cars on their own or join a team (not both).
+- Teams are 2 or more Pilots that work together to submit a car.
+- Pilots and Teams can submit different cars tunned for each track or one car for all tracks.
+- If a car hits another car, it will be evaluated according these rules: [The Rules of Racing](https://f1metrics.wordpress.com/2014/08/28/the-rules-of-racing/). This is also a good way to define different behaviors for your car based on its state. (We are still woking on our own rules)
 
-2. When conda asks you to proceed, type `y`:
+Instructions:
 
-```
-proceed ([y]/n)?
-```
-
-3. After this process, check if the environment was created. To see a list of all of your environments, run::
-
-```
-conda info --envs
-```
-
-### Activate Environment
-
-Every time you want to control the car using the API, you must first activate the skoods35 environment.
-
-In your Anaconda Prompt, run:
-
-```
-activate skoods35
-```
-
-### Install Additional Packages
-
-PIP is a package manager for Python packages, or modules if you like. A package contains all the files you need for a module and modules are Python code libraries you can include in your project.
-
-First, upgrade PIP itself:
+1. Go to [Getting Started](getting_started.md) to create and test your Python environment.
+2. Download and open the track simulation file.
+3. Clone this repo and navigate to the **SkoodsClosedWay/** folder. This folder contains the files needed to compete.
+4. Run the `__main__.py` file:
 
 ```
-pip install --upgrade pip
-```
-
-Then, follow the instructions to install 3 additional packages. This may need you to run **Anaconda Prompt** as Administrator:
-
-```
-pip install msgpack-rpc-python
+activate skoods36
 ```
 
 ```
-pip install airsim
+python __main__.py
 ```
 
-```
-conda install --channel https://conda.anaconda.org/menpo opencv3
-```
+4. Choose the option: **1** to record waypoints driving by your own, **2** to run the qualify and record the time of your first lap or **3** to race with 1 or more cars at the same time (you can use this feature to put your own cars to compete against each other).
+5. You will also need to choose if you want to: **1** Pause simulation when processing (this option is good if your code will take a long time to process and you want the simulation to wait for it, avoiding delays) or **2** if you want to run it real-time.
 
-If you use more Python packages in your code, you must install them here. Make sure the environment is activated before running the command.
-
-### Run the Code
-
-Before running the code, we must add a file that will define the initial setting of the simulation.
-
-1. Clone or download this repo to your local machine: https://github.com/skoods-org/welcome
-
-2. Create a new folder in the Documents folder called AirSim (if it´s not already there).
-
-3. Copy and paste the `settings.json` file to the new folder:
+## Code Structure
 
 ```
-/Documents/AirSim/settings.json
+/Skoods/
+
+  __main__.py
+  
+  /garage/
+    /pid_car/
+      __init__.py
+      localization.py
+      planning.py
+      /control/
+        __init__.py
+        pid.py
+
+  /skoods/
+    __init__.py
+    race.py
+    utils.py
 ```
 
-NOTE: Know more about the `settings.json` in the [Microsoft Airsim project page](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md).
+### Open-Source Self-Racing Car
 
-4. Open the Anaconda Prompt and activate the airsim35 environment:
+`__main__.py`
 
-```
-activate skoods35
-```
+`garage/pid_car/__init__.py`
 
-5. Double click the **AlphaVersionRace.exe** file to start the simulation (press `Alt+Tab` to go back to the Desktop).
+`garage/pid_car/localization.py`
 
-6. Navigate to the **PythonExamples/** folder and run the `hello_skoods.py` file:
+`garage/pid_car/planning.py`
 
-```
-python hello_skoods.py
-```
+`garage/pid_car/control/__init__.py`
 
-7. Press `Alt+F4` to exit.
+`garage/pid_car/control/pid.py`
 
-### (Optional) Download and Install Visual Studio Code
+### Skoods Racing Support
 
-**Visual Studio Code** combines the simplicity of a source code editor with powerful developer tooling.
+`skoods/__init__.py`
 
-I like to use **Visual Studio Code** to work on my projects. You can run Python code and change Conda Environments directly from the app.
+`skoods/race.py`
 
-- Download: https://code.visualstudio.com/download
+`skoods/utils.py`
 
-MORE INFO:
+### Code Improvements
 
-- [Why VS Code?](https://code.visualstudio.com/docs/editor/whyvscode)
-- [VS Code Python Tutorial](https://code.visualstudio.com/docs/python/python-tutorial)
+Here you can find information of what you can do to improve your car:
 
-## Coding You Own Self-Racing Car
+- Tune PID parameters: you can do it by hand or use Twiddle algorithms. [Twiddle - Artificial Intelligence for Robotics](https://www.youtube.com/watch?v=2uQ2BSzDvXs).
+- Implement an MPC algorithm or other controllers.
+- Use reinforcement learning or deep learning to mimic driver behavior.
+- Implement search algorithms to find the optimal path, instead of following waypoints recorded.
+- Develop perception and prediction algorithms to identify, localize and track other cars around.
 
-### Map
-
-Download the HD Map of the simulation here: [hd_map.xyz](https://docs.zoho.com/file/86za2b229a251abbd4ae7a41cdf234d5e5616)
-
-You can also generate your own HD Map by driving the track and running this code: [/PythonExamples/lidar_mapping.py](/PythonExamples/lidar_mapping.py) Make sure to change the `settings.json` file to:
-
-```json
-{
-  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
-  "SettingsVersion": 1.2,
-  "SimMode": "Car",
-  "DefaultSensors": {
-    "Lidar": {
-      "SensorType": 6,
-      "Enabled": true,
-      "DrawDebugPoints": true
-    }
-  }
-}
-```
-
-(Optional) Turning `DrawDebugPoints` to false may increase performance.
-
-TIP: To open `.xyz` files, you can use MeshLab, which is an open source system for processing and editing 3D triangular meshes. It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing. Website: http://www.meshlab.net/
-
-### Important links
-
-- [AirSim APIs](https://github.com/Microsoft/AirSim/blob/master/docs/apis.md)
-- [AirSim Settings](https://github.com/Microsoft/AirSim/blob/master/docs/settings.md)
-- [AirSim Python Examples](https://github.com/Microsoft/AirSim/tree/master/PythonClient/car)
-- [AirSim Sensors](https://github.com/Microsoft/AirSim/blob/master/docs/sensors.md)
-- [AirSim Lidar](https://github.com/Microsoft/AirSim/blob/master/docs/lidar.md)
-
-More coming soon!!!
-
-## Open-Source Self-Racing Car
-
-Coming soon!!!
