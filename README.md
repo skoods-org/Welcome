@@ -10,7 +10,7 @@ Our mission is to have a real Self-Driving Car racing by 2020.
 
 **Formula Skoods Intro**
 
-[![Skoods Demo](images/Skoods-Closed-Way-2.png)](https://youtu.be/_Ayh0lTGc_I)
+[![Skoods Demo](images/Skoods-Closed-Way-2.png)](https://www.youtube.com/watch?v=LEzh06hZtLc)
 
 **Video Teaser: Skoods inThe Goodwood Festival Of Speed 2018**
 
