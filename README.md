@@ -33,14 +33,6 @@ You can run the simulation and develop by your own. However, if you want to comp
 
 [![Slack](images/slack.png)](https://join.slack.com/t/skoods/shared_invite/enQtNDg0MzEwNDY3MjgyLWVlNjRlYWRhNTFiNDk0OTBlYmY2ZDMzMGZhOThlZjQ5NDczNjI4MzgxMmQzZDEyZWZlMzViMWVhZDc2MDRmMzg)
 
-### Open-Source Self-Racing Car
-
-If you want to collaborate with the development of our Open-Source Self-Racing Car, also join our Trello board:
-
-[![Trello](images/trello.png)](https://trello.com/b/U9xBONo2)
-
-
-
 ## Formula Skoods
 
 Welcome to the first virtual racing competition for autonomous cars of the world: Formula Skoods!
@@ -49,7 +41,7 @@ Formula Skoods is a platform for engineers and developers where they create thei
 
 Skoods provides a 3D simulation of the tracks as `.exe` files that pilots can run locally. We also provide an open-source self-racing car with the implementation of basic algorithms and technologies: it's a great way to start!
 
-It doesn't matter if you are a begginer trying to learn the basics of autonomous vehicles or if you are a more advanced developer competing for the Podium. You can get started right away.
+It doesn't matter if you are a beginner trying to learn the basics of autonomous vehicles or if you are a more advanced developer competing for the Podium. You can get started right away.
 
 ### Requirements
 
